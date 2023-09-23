@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./contact.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Open+Sans:300,400,600,700|Montserrat:400,700&display=swap" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav
+      class="padding2 px-5 flex mb-5 items-center justify-between py-5 right-0 left-0 top-0">
+      <div>
+        <h1 class="font-bold logo">
+          <a href="./index.html">get<span>linked</span></a>
+        </h1>
+      </div>
+      <ul class="hidden md:flex justify-between">
+        <div class="flex px-10">
+          <li class="px-4 hover:text-blue-300 cursor-pointer">
+            <a href="#">Timeline</a>
+          </li>
+          <li class="px-4 hover:text-blue-400 cursor-pointer">
+            <a href="./index.html">Overview</a>
+          </li>
+
+          <li class="px-4 hover:text-blue-400 cursor-pointer">
+            <a href="#faqs">FAQs</a>
+          </li>
+          <li class="px-4 hover:text-blue-400 cursor-pointer">
+            <a href="#">Contact</a>
+          </li>
+        </div>
+
+        <div>
+          <a href="./register.html" class="register">Register</a>
+        </div>
+      </ul>
+
+      <div class="menu space-y-1 md:hidden " >
+        <div class="w-3 h-0.5 bg-white"></div>
+        <div class="w-6 h-0.5 bg-white"></div>
+        <div class="w-4 h-0.5 bg-white"></div>
+      </div>
+    </nav>
+    <div class="">
+      <ul
+        class="hidden nav mobile absolute py-5 right-0 left-0 top-0 grid gap-3 text-white items-center justify-start md:hidden z-5">
+        <li class="px-4 hover:text-blue-300 cursor-pointer">
+          <a href="#">Timeline</a>
+        </li>
+        <li class="px-4 hover:text-blue-400 cursor-pointer">
+          <a href="./index.html">Overview</a>
+        </li>
+
+        <li class="px-4 hover:text-blue-400 cursor-pointer">
+          <a href="#">FAQs</a>
+        </li>
+        <li class="px-4 hover:text-blue-400 cursor-pointer">
+          <a href="#">Contact</a>
+        </li>
+        <div>
+          <a href="./register.html" class="register px-5">Register</a>
+        </div>
+
+        <button class="remove text-white text-4xl absolute top-0 right-8 z-5">
+          x
+        </button>
+      </ul>
+    </div>
+
+    <section class="contact padding">
+      <div>
+        <div class="grid gap-3">
+          <div>
+            <h2>Get in touch</h2>
+          </div>
+          <div class="grid gap-3">
+            <p>Contact Information</p>
+            <div>
+                <p>27,Alara Street  </p>
+                <p>Yaba 100012</p>
+                <p>Lagos State</p>
+            </div>
+            <p>Call Us : 07067981819</p>
+           <div>
+            <p>we are open from Monday-Friday </p>
+            <p>08:00am - 05:00pm</p>
+           </div>
+          </div>
+
+          <div>
+            <h4>Share on</h4>
+            <div class="flex gap-2">
+              <div>
+                <img src="./images/Vector (6).png" alt="twitter-img" />
+              </div>
+              <div>
+                <img src="./images/mdi_instagram.png" alt="instagram-img" />
+              </div>
+              <div>
+                <img src="./images/Vector (7).png" alt="instagram-img" />
+              </div>
+              <div>
+                <img src="./images/ri_linkedin-fill.png" alt="instagram-img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form action="" class="padding grid gap-5 form">
+        <div>
+            <h3>Questions or need assistance? </h3>
+            <h3>Let us know about it!</h3>
+        </div>
+
+        <div>
+          <input class="input" type="text" placeholder="First name" />
+        </div>
+        <div>
+          <input class="input" type="email" placeholder="Mail" />
+        </div>
+
+        <div>
+          <textarea
+            name=""
+            id=""
+            cols="10"
+            rows="10"
+            placeholder="Message"></textarea>
+        </div>
+
+        <div class="text-center">
+          <input class="submit" type="submit" />
+        </div>
+      </form>
+    </section>
+
+    <script src="./nav.js"></script>
+  </body>
+</html>

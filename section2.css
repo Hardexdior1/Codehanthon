@@ -7,8 +7,20 @@
     gap: 5%;
     border-bottom: 1px solid gray ;
 }
+.section3{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 5%;
+}
+.grey{
+    border-bottom: 1px solid gray ;
 
-#section2 div:nth-child(1){
+}
+
+#section2 div:nth-child(2){
     order: 2;
 
 }
@@ -16,22 +28,55 @@
 /* .section2 div{
     width: 100%;
 } */
-.section2 h2{
-    font-size: 2.5rem;
-    line-height: 94% ;
+.section2 h2,.padding3 h2,.sponsors h2{
+    font-size: 1.9rem;
+    line-height: 100% ;
+    
+    
+    
+}
+.sponsors{
+    color: white;
 }
 .section2 div:nth-child(2){
     display: grid ;
     gap: 17px ;
 }
+.question{
+    border-bottom: 1px solid #d434fe;
+    padding-bottom: 4px ;
+    margin-bottom: 5%;
+    cursor: pointer;
+}
 @media (max-width:900px) {
-    .section2 h2{
+    .section2 h2.padding3 h2{
         font-size: 1.5rem;
     }
 }
+.privacyWrap{
+    border: 1px solid #D434FE;
+padding: 10% 10%;
+}
+@media (max-width:700px){
+.section2,.section3{
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+.padding3{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.privacyWrap{
+    text-align: left;
+}
+}
+.privacyWrap button{margin:0 auto;}
 
-@media (max-width:599px) {
-   .section2{
+
+@media (max-width:890px) {
+   #section2Faq{
+    display: grid;
     grid-template-columns: 1fr ;
     text-align: center;
     justify-content: center;
@@ -41,8 +86,12 @@
     
 
    }
-   .section2 h2{
+   .section2 h2,.padding3 h2{
     font-size: 1.7rem;
+}
+
+.question{
+    margin-bottom: 7%;
 }
 .section2 img{
     width: 90%;
@@ -51,10 +100,11 @@
 .border{
     display: none;
 }
-#section2 div:nth-child(2){
+#section2 div:nth-child(3){
     order: 2;
 
 }
+
 .section2 p{
     /* margin-bottom: 2%; */
 }
@@ -64,13 +114,13 @@
   
     
 }
-
-.question{
-    border-bottom: 1px solid #d434fe;
-    padding-bottom: 4px ;
-    margin-bottom: 3%;
-    cursor: pointer;
+@media (max-width: 550px){
+    .question p{
+        font-size: 0.7em;
+    }
 }
+
+
 .minus{
     display: none ;
    
@@ -87,8 +137,13 @@
 .question {
     /* font-size: 18px ; */
 }
-@media (max-width:400px){
-    .question p{
-        font-size: 13px ;
-    }
+
+/*  */
+.privacyWrap input{
+    accent-color:rgb(65, 247, 65) ;
+    color: white;
+    
+}.privacyWrap h4:nth-child(1){
+    color: #D434FE;
+
 }

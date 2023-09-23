@@ -1,0 +1,263 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.contact h2 {
+  font-size: 1.8rem;
+  color: #d43afe;
+}
+.contact h4 {
+  font-size: 1rem;
+  color: #d43afe;
+}
+.contact p {
+  color: white;
+}
+.contact h3 {
+  color: #d43afe;
+  font-size: 1rem;
+}
+.contact {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-around;
+  gap: 10px;
+  align-items: center;
+}
+.form {
+  box-shadow: 2px 2px 15px;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.input {
+  width: 100%;
+  height: 40px;
+  padding-left: 5px;
+  background-color: transparent;
+  border: 1px solid grey;
+  color: white;
+}
+.form textarea {
+  width: 100%;
+  padding-left: 5px;
+  border: 1px solid grey;
+  background-color: transparent;
+}
+.submit {
+  margin: 0 auto;
+  background-image: linear-gradient(
+    to left,
+    #903aff,
+    #d434fe,
+    #ff2bd9,
+    #fe34b9
+  );
+  border: none;
+  padding: 6px 30px;
+  color: white;
+}
+@media (max-width:671px) {
+  .contact {
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+  }
+  .form{
+    width: 100%;
+  }
+}
+
+/* ne css */
+.register1 h1:nth-child(1) {
+  font-size: 1.5rem;
+  color: #d43afe;
+  font-weight: bolder;
+}
+.register1 h1:nth-child(2) {
+  font-size: 1rem;
+  color: white;
+}
+.register1 p {
+  color: white;
+}
+.register1 label {
+  color: white;
+  margin-top: 15px;
+  font-size: 0.8rem;
+  /* margin-bottom: 105px ; */
+}
+.register1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+.registergrid input,
+select {
+  margin-top: 10px;
+  height: fit-content;
+  background-color: transparent;
+  border: 1px solid grey;
+  padding: 5px 5px;
+  width: 100%;
+  color: white;
+  font-size: 0.7rem;
+  height: 40px;
+  border-radius: 3px;
+}
+@media (max-width: 1032px) {
+  .registergrid input,
+  select {
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 767px) {
+  .register1 {
+    grid-template-columns: 1fr;
+    /* padding: 20% 15% ; */
+    margin-bottom: 20%;
+  }
+}
+
+.register1 {
+  color: white;
+}
+.register1 option {
+  color: black;
+}
+/* .register1 small:nth-child(1){
+    color: white;
+} */
+.review {
+  color: #ff2bd9;
+}
+#submit {
+  accent-color: #d43afe;
+}
+.registergrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* padding: 30px 0px ; */
+  position: relative;
+  gap: 20px;
+}
+#registerWrap {
+  box-shadow: 3px 3px 8px rgb(13, 4, 37);
+  border-radius: 5px;
+  padding: 10% 10%;
+}
+@media (max-width: 600px) {
+  .registergrid input,
+  select {
+    font-size: 0.9rem;
+  }
+  .registergrid {
+    grid-template-columns: 1fr;
+  }
+  #select {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+
+}
+@media(max-width:314px){
+    .registergrid input,select{
+        font-size: 0.5rem;
+    }
+}
+
+.registerNow,.registerNow1 {
+  width: 100%;
+  height: 40px;
+  background-image: linear-gradient(
+    to left,
+    #903aff,
+    #d434fe,
+    #ff2bd9,
+    #fe34b9
+  );
+  transition: 0.3s;
+  border-radius: 5px;
+}
+.registerNow,.registerNow1:hover {
+  background-image: linear-gradient(
+    to right,
+    #903aff,
+    #d434fe,
+    #ff2bd9,
+    #fe34b9
+  );
+}
+.successWrap{
+   
+
+  display: none;
+  
+}
+.successWrapShow{
+    border: 1px solid #ff2bd9;
+   
+    padding: 4% 3% ;
+    /* z-index: -5px; */
+    top: 25%;
+    bottom: 25%;
+    left: 25%;
+    right: 25%;
+    /* bottom: 25px; */
+    position: absolute;
+   /* height: fit-content; */
+   height: fit-content;
+   z-index: 30;
+   background-color: #150e28;
+}
+.successWrapShow h3{
+    font-size: 1rem;
+    color: white;
+}
+
+
+
+
+
+  
+  .animated-element {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    animation: moveRight 4s linear infinite; /* Apply the animation */
+  }
+  
+  @keyframes moveRight {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: calc(100% - 50px); /* Move to the right edge of the screen */
+    }
+  }
+
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transition: width 1s ease-in-out, height 1s ease-in-out, background-color 1s ease-in-out;
+  }
+  
+  .box:hover {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+  }
+  
+  #animateButton {
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  
+  

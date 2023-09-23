@@ -1,26 +1,3 @@
-let menu = document.querySelector(".menu ");
-let nav = document.querySelector(".nav");
-let pxThree = document.querySelectorAll(".px-3");
-let remove = document.querySelector(".remove");
-
-// remove.addEventListener(('click',()=>{
-//     nav.classList.add('hidden')
-// }))
-remove.addEventListener("click", () => {
-  nav.classList.add("hidden");
-});
-
-console.log(pxThree);
-pxThree.forEach((each) => {
-  each.addEventListener("click", () => {
-    nav.classList.add("hidden");
-  });
-});
-
-menu.addEventListener("click", () => {
-  nav.classList.toggle("hidden");
-});
-
 let question = document.querySelectorAll(".question");
 let minus = document.querySelectorAll(".minus");
 let plus = document.querySelectorAll(".plus");
@@ -63,3 +40,42 @@ question[4].addEventListener("click", () => {
 // question[0].addEventListener("click", () => {
 //
 // });
+
+let hour = document.querySelector(".hour");
+let minute = document.querySelector(".minute");
+let second = document.querySelector(".second");
+
+// hour.textContent=60
+// minute.textContent=60
+// second.textContent=60
+
+function start() {
+  let hours = 60;
+  let minutes = 60;
+  let seconds = 60;
+  timer = setInterval(function () {
+    seconds--;
+    if (seconds === 0) {
+      seconds = 60;
+      minutes--;
+    }
+    if (minutes === 0) {
+      // minutes==60
+      hours--;
+      seconds = 60;
+      minutes = 60;
+    }
+    if (hours === 0) {
+      seconds = 60;
+      minutes = 60;
+      hours = 60;
+    }
+
+    //   time.textContent=hours+ ' '+ minutes+' '+ seconds
+
+    hour.textContent = hours;
+    minute.textContent = minutes;
+    second.textContent = seconds;
+  },3000);
+}
+start();

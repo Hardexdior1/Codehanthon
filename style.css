@@ -20,13 +20,25 @@ html{
   /* background-color: black; */
   background-color: #150e28;
   padding-left: 3%;
-
   z-index: 20;
+}
+.transition{
+  transition:0.3s ease-in-out;
 }
 
 
 .padding {
   padding: 3% 5%;
+}
+@media (max-width:700px) {
+  .padding{
+    padding:8% 5%;
+  }
+}
+@media (max-width:400px) {
+  .padding{
+    padding:15% 5%;
+  }
 }
 .padding2{
   padding: 1.5% 5%;
@@ -70,8 +82,13 @@ nav {
 }
 nav a {
   font-weight: bold;
+  font-size:1em;
   /* font-family: 'Montserrat'; */
   color: #ffffff;
+  transition: 0.3s;
+}
+nav a:hover{
+  color: #903aff;
 }
 .register {
   padding: 10px 30px;
@@ -89,6 +106,14 @@ nav a {
   border-radius: 4px;
   /* z-index: 3000; */
 }
+.menu div{
+background-color: white;
+}
+.mobile li{
+  margin-top: 10px ;
+  margin-bottom:10px;
+}
+
 .igniteWrap{
     display: flex;
     align-items: center;
@@ -99,6 +124,7 @@ nav a {
   white-space: nowrap;
   overflow: hidden;
   width: 0;
+  /* font-size: larger; */
   animation: typing 3s steps(28) 1s forwards, blink-caret 0.75s step-end infinite;
 }
 
@@ -128,7 +154,11 @@ nav a {
 .line {
   position: absolute;
 
-  right: 20%;
+  right: 22%;
+  width: 8%;
+}
+.text-s{
+  font-size: 0.5em;
 }
 .zero {
   color: #d434fe;
@@ -165,7 +195,7 @@ nav a {
 }
 .griding h2 {
   line-height: 70px;
-  font-size: 3.5rem;
+  font-size: 4rem;
   margin-top: 0;
 }
 .toColumn {
@@ -192,9 +222,7 @@ nav a {
     /* margin-top: 100px ; */
   }
   
-  @media (max-width:816px){
-
-  }
+  
 @media (max-width:935px){
     .griding h2{
         font-size: 1.5em;
@@ -220,6 +248,12 @@ nav a {
     padding: 5% 0px ;
 
   }
+  .time{
+  text-align: center;
+  margin: 0 auto;
+
+  }
+  
   .flex1 {
     /* display: flex; */
     /* position: relative; */
@@ -251,7 +285,11 @@ bottom:50 ;
     /* position: relative; */
   }
 }
-
+@media (max-width:350px) {
+  .italic{
+    font-size: 0.7em;
+  }
+}
 @media (max-width: 358px) {
   .griding h2 {
     font-size: 1.5em;
@@ -287,7 +325,7 @@ bottom:50 ;
 }
 .wearingImg{
     z-index: -10;
-    width: 90%;
+    width: 95%;
 }
 
 .relativeLight{
@@ -295,4 +333,7 @@ bottom:50 ;
   justify-content: end;
   width: 78%;
   margin-bottom: 0;
+}
+.griding p{
+  max-width: 500px;
 }

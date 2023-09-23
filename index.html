@@ -13,14 +13,17 @@
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./section2.css" />
     <link rel="stylesheet" href="./footer.css" />
+    <link rel="stylesheet" href="./app.css" />
 
-    <title>Document</title>
+    <title>GetLinked||AdeniranQuwam</title>
   </head>
-  <body style="padding-bottom: 1000px">
+  <body>
     <nav
       class="padding2 px-5 flex mb-5 items-center justify-between py-5 right-0 left-0 top-0">
       <div>
-        <h1 class="font-bold logo">get<span>linked</span></h1>
+        <h1 class="font-bold logo">
+          <a href="#">get<span>linked</span></a>
+        </h1>
       </div>
       <ul class="hidden md:flex justify-between">
         <div class="flex px-10">
@@ -28,26 +31,26 @@
             <a href="#">Timeline</a>
           </li>
           <li class="px-4 hover:text-blue-400 cursor-pointer">
-            <a href="./images/about.html">Overview</a>
+            <a href="#">Overview</a>
           </li>
 
           <li class="px-4 hover:text-blue-400 cursor-pointer">
             <a href="#faqs">FAQs</a>
           </li>
           <li class="px-4 hover:text-blue-400 cursor-pointer">
-            <a href="#">Contact</a>
+            <a href="./contact.html">Contact</a>
           </li>
         </div>
 
         <div>
-          <a href="#" class="register">Register</a>
+          <a href="./register.html" class="register">Register</a>
         </div>
       </ul>
 
-      <div class="menu space-y-1 md:hidden">
+      <div class="menu space-y-1 md:hidden " >
+        <div class="w-3 h-0.5 bg-white"></div>
         <div class="w-6 h-0.5 bg-white"></div>
-        <div class="w-6 h-0.5 bg-white"></div>
-        <div class="w-6 h-0.5 bg-white"></div>
+        <div class="w-4 h-0.5 bg-white"></div>
       </div>
     </nav>
     <div class="">
@@ -57,17 +60,17 @@
           <a href="#">Timeline</a>
         </li>
         <li class="px-4 hover:text-blue-400 cursor-pointer">
-          <a href="./images/about.html">Overview</a>
+          <a href="#">Overview</a>
         </li>
 
         <li class="px-4 hover:text-blue-400 cursor-pointer">
           <a href="#">FAQs</a>
         </li>
         <li class="px-4 hover:text-blue-400 cursor-pointer">
-          <a href="#">Contact</a>
+          <a href="./contact.html">Contact</a>
         </li>
         <div>
-          <button class="register px-5">Register</button>
+          <a href="./register.html" class="register px-5">Register</a>
         </div>
 
         <button class="remove text-white text-4xl absolute top-0 right-8 z-5">
@@ -84,10 +87,12 @@
             alt="star-icon" />
         </div>
         <div class="flex1">
-          <h4 class="italic text-white text-2xl font-bold">
+          <h4 class="italic text-white font-bold">
             Igniting a Revolution in HR Innovation
           </h4>
-          <div class="line"><img src="./images/purpleline.PNG" alt="" /></div>
+          <div class="line">
+            <img src="./images/Vector 4.png" alt="purple-line" />
+          </div>
         </div>
       </div>
 
@@ -133,6 +138,21 @@
               <div class="">
                 <a href="#" class="register" id="check">Register</a>
               </div>
+
+              <div class="text-white font-bold flex gap-3 mt-4 time">
+                <div class="flex items-end">
+                  <h4 class="text-3xl md:text-4xl hour">60</h4>
+                  <small class="text-2xl md:text-2xl">h</small>
+                </div>
+                <div class="flex items-end">
+                  <h4 class="text-3xl md:text-4xl minute">60</h4>
+                  <small class="text-2xl md:text-2xl">m</small>
+                </div>
+                <div class="flex items-end">
+                  <h4 class="text-3xl md:text-4xl second">60</h4>
+                  <small class="text-2xl md:text-2xl">s</small>
+                </div>
+              </div>
             </div>
             <div class="wearingWrap">
               <img
@@ -159,10 +179,11 @@
         </div>
 
         <div>
-          <h2>
-            introduction to getlinked
-            <span class="zero">tech hackathon 1.0</span>
-          </h2>
+          <div>
+            <h2>introduction to getlinked</h2>
+            <h2 class="zero">tech hackathon 1.0</h2>
+          </div>
+
           <p>
             Our tech hackathon is a melting pot of visionaries, and its purpose
             is as clear as day: to shape the future. Whether you're a coding
@@ -182,10 +203,11 @@
         </div>
 
         <div>
-          <h2>
-            Rules and
-            <span class="zero"> Guidelines</span>
-          </h2>
+          <div>
+            <h2>Rules and</h2>
+            <h2 class="zero">Guidelines</h2>
+          </div>
+
           <p>
             Our tech hackathon is a melting pot of visionaries, and its purpose
             is as clear as day: to shape the future. Whether you're a coding
@@ -199,17 +221,17 @@
     </div>
 
     <div>
-      <section class="section2 padding">
+      <section class="section2 padding" id="section2Faq">
         <div>
           <img src="./images/8046554 1.png" alt="criteria-img" />
         </div>
 
         <div>
-          <h2>
-            Judging Criteria
+          <div>
+            <h2>Judging Criteria</h2>
 
-            <span class="zero"> Key attributes</span>
-          </h2>
+            <h2 class="zero">Key attributes</h2>
+          </div>
           <div>
             <p>
               <span class="zero1">Innovation and Creativity:</span> Evaluate the
@@ -260,14 +282,14 @@
     </div>
 
     <div id="faqs">
-      <section class="section2 padding" id="">
+      <section class="section2 padding" id="section2Faq">
         <div class="text-left">
-          <h2 class="mb-4 mt-5 large:text-1xl">
-            Frequently Ask
+          <div>
+            <h2 class="mt-5 large:text-1xl">Frequently Ask</h2>
 
-            <span class="zero">Question</span>
-          </h2>
-          <p class="mb-4">
+            <h2 class="zero">Question</h2>
+          </div>
+          <p class="mb-4 mt-3">
             We got answers to the questions that you might want to ask about
             getlinked Hackathon 1.0
           </p>
@@ -338,87 +360,194 @@
       </section>
     </div>
 
-    <footer class="footer padding">
-      <div class="footerFlex text-left">
+    <div class="padding grid gap-4 grey">
+      <div class="flex justify-around padding3">
         <div>
-          <div class="grid gap-2">
-            <h1 class="font-bold logo mb-4">get<span>linked</span></h1>
-
-            <p class="text-white mb-3">
-              Getlinked Tech Hackathon is a technology innovation program
-              established by a group of organizations with the aim of showcasing
-              young and talented individuals in the field of technology
-            </p>
+          <img
+            src="./images/star (1).png"
+            alt="star-icon"
+            class="blinking-icon" />
+        </div>
+        <div class="grid gap-4">
+          <div>
+            <h2 class="text-white">Prizes and</h2>
+            <h2 class="zero">Rewards</h2>
           </div>
+          <div>
+            <div>
+              <p class="mb-0 text-white">
+                Highlight of the prizes or rewards for winners and
+              </p>
+              <p class="mt-0 text-white">for participants.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section3 mb-5">
+        <div>
+          <img src="./images/9486889 1.png" alt="trophy-img" />
+        </div>
 
-          <p class="text-white">
-            Terms of Use <span class="bg"></span> Privacy Policy
+        <div>
+          <img src="./images/Rewards.png" alt="reward-img" />
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center grid gap-5 padding sponsors">
+      <div class="grid gap-4">
+        <div>
+          <h2>Partners and Sponsors</h2>
+        </div>
+
+        <div>
+          <p>Getlinked Hackathon 1.0 is honored to have the following major</p>
+          <p>
+            companies as its partners and sponsorsons that can change the world,
+            that's what we're all about!
           </p>
         </div>
-        <div>
-          <h4 class="text-1xl mb-3">Useful Links</h4>
+      </div>
+
+      <div>
+        <img
+          src="./images/Partner and sponsors section.png"
+          alt="sponsors-img" />
+      </div>
+    </div>
+
+    <div>
+      <section class="section2 padding">
+        <div class="grid gap-4">
           <div>
+            <h2>Privacy Policy and</h2>
+
+            <h2 class="zero">Terms</h2>
+          </div>
+          <p>Last updated on September 12, 2023</p>
+          <p>
+            Below are our privacy & policy, which outline a lot of goodies. it’s
+            our aim to always take of our participant
+          </p>
+
+          <div class="grid gap-4 privacyWrap">
+            <div>
+              At getlinked tech Hackathon 1.0, we value your privacy and are
+              committed to protecting your personal information. This Privacy
+              Policy outlines how we collect, use, disclose, and safeguard your
+              data when you participate in our tech hackathon event. By
+              participating in our event, you consent to the practices described
+              in this policy.
+            </div>
+            <div>
+              <h4>Licensing Policy</h4>
+              <h4>Here are terms of our Standard License:</h4>
+            </div>
+            <div class="flex items-top gap-2">
+              <div><input type="checkbox" checked /></div>
+              <small
+                >The Standard License grants you a non-exclusive right to
+                navigate and register for our event</small
+              >
+            </div>
+            <div class="flex items-top gap-2">
+              <div><input type="checkbox" checked /></div>
+              <small
+                >You are licensed to use the item available at any free source
+                sites, for your project development</small
+              >
+            </div>
+            <button class="register">Read More</button>
+          </div>
+        </div>
+
+        <div class="relative">
+          <img src="./images/Vector (9).png" alt="padlock-img" />
+          <img class="absolute" src="./images/08 1.png" alt="man-img" />
+        </div>
+      </section>
+    </div>
+
+ 
+
+    <footer class="padding text-center text-white grid gap-10 q">
+     
+       
+      
+      <div class="footer1Flex text-left " >
+        <div class="grid gap-4 " id="foot" >
+          <h1 class="font-bold logo">
+            <a href="#">get<span>linked</span></a>
+          </h1>
+          <p>
+            Getlinked Tech Hackathon is a technology innovation program
+            established by a group of organizations with the aim of showcasing
+            young and talented individuals in the field of technology
+          </p>
+          <p>Term of Use <span class="bg"></span> Privacy Policy</p>
+        </div>
+
+        <div class="grid gap-4" id="foot">
+          <h1 class="font-bold logo">
+            <a href="#"><span>Useful Links</span></a>
+          </h1>
+          <div class="grid gap-2">
             <li><a class="py-5" href="#">overview</a></li>
             <li><a href="#">Timeline</a></li>
             <li><a href="#">FAQs</a></li>
-            <div class="flex justify-between gap-3 mt-5">
-              <h3>Follow us</h3>
-              <div class="flex items-center gap-2">
-                <div>
-                  <img src="./images/Vector (6).png" alt="twitter-img" />
-                </div>
-                <div>
-                  <img src="./images/mdi_instagram.png" alt="instagram-img" />
-                </div>
-                <div>
-                  <img src="./images/Vector (7).png" alt="instagram-img" />
-                </div>
-                <div>
-                  <img
-                    src="./images/ri_linkedin-fill.png"
-                    alt="instagram-img" />
-                </div>
-              </div>
-            </div>
           </div>
-        </div>
 
-        <div>
-          <h4 class="text-1xl mb-3">Contact Us</h4>
-          <div>
-            <div class="flex justify-between gap-3 mt-5 relative">
-              <div class=" "></div>
-            </div>
-            <div class="flex gap-3 mt-5 text-left">
-              <div class="flex gap-2">
-                <div>
-                  <img src="./images/Group.png" alt="phone-icon" />
-                </div>
-                <p class="text-white">
-                  27,Alara Street Yaba 100012 Lagos State
-                </p>
+          <div class="flex gap-3 items-center" id="foot">
+            <h3>Follow us</h3>
+            <div class="flex items-center gap-2">
+              <div>
+                <img src="./images/Vector (6).png" alt="twitter-img" />
+              </div>
+              <div>
+                <img src="./images/mdi_instagram.png" alt="instagram-img" />
+              </div>
+              <div>
+                <img src="./images/Vector (7).png" alt="instagram-img" />
+              </div>
+              <div>
+                <img src="./images/ri_linkedin-fill.png" alt="instagram-img" />
               </div>
             </div>
           </div>
         </div>
-        <!-- <div>
-          <h4 class="text-1xl">Contact Us</h4>
-          <div>
-            <div class="flex items-center">
-              <div></div>
-              <div><p class="text-white">+234 9021004201</p></div>
+      
+
+      <div>
+        <div class="grid gap-4">
+          <h1 class="font-bold logo">
+            <a href="#"><span>Contact Us </span></a>
+          </h1>
+
+          <div class="flex gap-3">
+            <div class="flex items-center gap-2">
+              <div>
+                <img src="./images/Vector (8).png" alt="location-img" />
+              </div>
+
+              <p>27,Alara Street Yaba 100012 Lagos State</p>
             </div>
-            <div>
-              <p class="text-white">27 Alara Street Yaba 100012 Lagos State</p>
-            </div>
+            
           </div>
-        </div> -->
+          <div class="flex items-center gap-2">
+            <div>
+              <img src="./images/Group.png" alt="phone-img" />
+            </div>
+
+            <p>+234 9021004201</p>
+          </div>
+        </div>
       </div>
-      <p class="text-white1 text-white">
-        All rights reserved. © getlinked Ltd.
-      </p>
+      </div>
+
+      <p>All rights reserved. © getlinked Ltd.</p>
     </footer>
     <a href="">REFRESH</a>
+    <script src="./nav.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
