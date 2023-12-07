@@ -208,7 +208,7 @@ select {
     /* bottom: 25px; */
     position: absolute;
    /* height: fit-content; */
-   height: fit-content;
+   height: max-content;
    z-index: 30;
    background-color: #150e28;
 }
@@ -222,42 +222,9 @@ select {
 
 
   
-  .animated-element {
-    width: 50px;
-    height: 50px;
-    background-color: blue;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    animation: moveRight 4s linear infinite; /* Apply the animation */
-  }
   
-  @keyframes moveRight {
-    0% {
-      left: 0;
-    }
-    100% {
-      left: calc(100% - 50px); /* Move to the right edge of the screen */
-    }
-  }
 
-  .box {
-    width: 100px;
-    height: 100px;
-    background-color: blue;
-    transition: width 1s ease-in-out, height 1s ease-in-out, background-color 1s ease-in-out;
-  }
-  
-  .box:hover {
-    width: 200px;
-    height: 200px;
-    background-color: red;
-  }
-  
-  #animateButton {
-    margin-top: 20px;
-    cursor: pointer;
-  }
+ 
   
   
   

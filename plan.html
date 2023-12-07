@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    import React, { useState } from 'react';
+
+const HideOnHover = () => {
+  const [isHidden, setIsHidden] = useState(true);
+
+  const handleMouseEnter = () => {
+    setIsHidden(false);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHidden(true);
+  };
+  https://www.obiabo.me/  return (
+    <div
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      style={{
+        width: '200px',
+        height: '200px',
+        backgroundColor: 'lightgray',
+        position: 'relative',
+      }}
+    >
+      <div
+        style={{
+          display: isHidden ? 'none' : 'block',
+          position: 'absolute',
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
+          backgroundColor: 'blue',
+          color: 'white',
+          padding: '10px',
+        }}
+      >
+        Hidden Content
+      </div>
+    </div>
+  );
+};
+
+export default HideOnHover;
+
+</body>
+</html>

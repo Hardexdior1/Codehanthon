@@ -1,3 +1,19 @@
+
+
+
+/* @media (max-width:829px) {
+  .reduce{
+    font-size: 2.5rem;
+  }
+} */
+
+
+
+
+
+
+
+
 body {
   margin: 0;
   padding: 0;
@@ -238,7 +254,7 @@ background-color: white;
         margin-bottom: 23px ;
       }
 }
-@media (max-width: 522px) {
+@media (max-width: 600px) {
   .toColumn {
     display: flex;
     flex-direction: column;
@@ -336,4 +352,10 @@ bottom:50 ;
 }
 .griding p{
   max-width: 500px;
+}
+
+
+
+textarea{
+  color: white;
 }
